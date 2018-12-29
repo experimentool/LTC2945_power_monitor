@@ -1,5 +1,5 @@
 //LTC2945 Test Code
-//  http://www.kevindarrah.com/wiki/index.php?title=Power_Monitor
+//  original author http://www.kevindarrah.com/wiki/index.php?title=Power_Monitor
 // Original program was set up to use an arduino mini.
 // Modified by JAL April 27 2017 to use an ESP8266-12E to upload 0-80V inputVoltage to thingspeak.
 // Use GPIO4 for SDA and GPIO5 for SCL
@@ -16,11 +16,11 @@
 
 
 const char* host = "api.thingspeak.com"; // Your domain  
-String ApiKey = "NSTRXQ0L3FLOSWMJ";
+String ApiKey = "";  //put your thingspeak api key between the quotes
 String path = "/update?key=" + ApiKey + "&field1=";  
 
-const char* ssid = "tallyho0";
-const char* pass = "jaljiminy8";
+const char* ssid = "";  //put your network ssid name between the quotes
+const char* pass = "";  //put your network password between the quotes
 
 
 
